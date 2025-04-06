@@ -1,0 +1,115 @@
+.header {
+  background: linear-gradient(90deg, #142c8e, #0070ba);
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.desktop-nav1 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 20px;
+}
+
+.nav-item1 {
+  color: white;
+  margin: 0 15px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.nav-item1.active {
+  border-bottom: 3px solid white;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle.active {
+  transform: rotate(90deg);
+}
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: #142c8e;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 100;
+}
+
+.mobile-nav.active {
+  display: flex;
+}
+
+.mobile-nav .nav-item1 {
+  margin: 10px 0;
+}
+
+.logout-button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c9302c;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav1 {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .mobile-nav.active {
+    display: flex;
+  }
+}
