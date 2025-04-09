@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Fakecombank/static/css/main.d7476f4a.css",
-    "main.js": "/Fakecombank/static/js/main.481c774c.js",
-    "static/js/453.96a7c8dc.chunk.js": "/Fakecombank/static/js/453.96a7c8dc.chunk.js",
-    "static/media/personal-loan.jpg": "/Fakecombank/static/media/personal-loan.f6758673712445302f2d.jpg",
-    "static/media/Money-transfer.jpg": "/Fakecombank/static/media/Money-transfer.e0502f72798261083baa.jpg",
-    "static/media/1569653930-Credit_Card.png": "/Fakecombank/static/media/1569653930-Credit_Card.989c419a6e91e3582ff2.png",
-    "static/media/th.jpg": "/Fakecombank/static/media/th.81220c191253c1bfde1c.jpg",
-    "static/media/FAKECOMBANK.png": "/Fakecombank/static/media/FAKECOMBANK.1b07b7ba7f47046f679a.png",
-    "static/media/what-u-s-companies-can-learn-from-the-european-payment-scene_1500.jpg": "/Fakecombank/static/media/what-u-s-companies-can-learn-from-the-european-payment-scene_1500.67f1a758a7fec621923d.jpg",
-    "static/media/platinum-card.jpg": "/Fakecombank/static/media/platinum-card.1d4cfe924246bb1c84bf.jpg",
-    "static/media/uudai_svien.jpg": "/Fakecombank/static/media/uudai_svien.650a8dfcd758f05f9a41.jpg",
-    "index.html": "/Fakecombank/index.html",
-    "main.d7476f4a.css.map": "/Fakecombank/static/css/main.d7476f4a.css.map",
-    "main.481c774c.js.map": "/Fakecombank/static/js/main.481c774c.js.map",
-    "453.96a7c8dc.chunk.js.map": "/Fakecombank/static/js/453.96a7c8dc.chunk.js.map"
+    "main.css": "/Fakecombank/react-js/static/css/main.d5259a88.css",
+    "main.js": "/Fakecombank/react-js/static/js/main.798d4ca6.js",
+    "static/js/453.96a7c8dc.chunk.js": "/Fakecombank/react-js/static/js/453.96a7c8dc.chunk.js",
+    "static/media/personal-loan.jpg": "/Fakecombank/react-js/static/media/personal-loan.f6758673712445302f2d.jpg",
+    "static/media/Money-transfer.jpg": "/Fakecombank/react-js/static/media/Money-transfer.e0502f72798261083baa.jpg",
+    "static/media/1569653930-Credit_Card.png": "/Fakecombank/react-js/static/media/1569653930-Credit_Card.989c419a6e91e3582ff2.png",
+    "static/media/th.jpg": "/Fakecombank/react-js/static/media/th.81220c191253c1bfde1c.jpg",
+    "static/media/FAKECOMBANK.png": "/Fakecombank/react-js/static/media/FAKECOMBANK.1b07b7ba7f47046f679a.png",
+    "static/media/what-u-s-companies-can-learn-from-the-european-payment-scene_1500.jpg": "/Fakecombank/react-js/static/media/what-u-s-companies-can-learn-from-the-european-payment-scene_1500.67f1a758a7fec621923d.jpg",
+    "static/media/platinum-card.jpg": "/Fakecombank/react-js/static/media/platinum-card.1d4cfe924246bb1c84bf.jpg",
+    "static/media/uudai_svien.jpg": "/Fakecombank/react-js/static/media/uudai_svien.650a8dfcd758f05f9a41.jpg",
+    "index.html": "/Fakecombank/react-js/index.html",
+    "main.d5259a88.css.map": "/Fakecombank/react-js/static/css/main.d5259a88.css.map",
+    "main.798d4ca6.js.map": "/Fakecombank/react-js/static/js/main.798d4ca6.js.map",
+    "453.96a7c8dc.chunk.js.map": "/Fakecombank/react-js/static/js/453.96a7c8dc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7476f4a.css",
-    "static/js/main.481c774c.js"
+    "static/css/main.d5259a88.css",
+    "static/js/main.798d4ca6.js"
   ]
 }
