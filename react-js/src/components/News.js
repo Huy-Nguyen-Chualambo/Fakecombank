@@ -1,11 +1,14 @@
 import React from 'react';
 import '../styles/News.css';
 import NewsCard from './NewsCard';
+import moneytransfer from '../assets/pics/Money-transfer.jpg';
+import newcard from '../assets/pics/th.jpg'
+import uudai_svien from '../assets/pics/uudai_svien.jpg';
 
 function News() {
   const news = [
     {
-      image: './pic/platinum-card.jpg',
+      image: newcard,
       date: '14 tháng 3, 2025',
       title: 'Ra mắt thẻ tín dụng Platinum mới',
       description:
@@ -13,7 +16,7 @@ function News() {
       link: '#',
     },
     {
-      image: './pic/uudai_svien.jpg',
+      image: uudai_svien,
       date: '10 tháng 3, 2025',
       title: 'Ưu đãi đặc biệt cho sinh viên',
       description:
@@ -21,7 +24,7 @@ function News() {
       link: '#',
     },
     {
-      image: './pic/Money-transfer.jpg',
+      image: moneytransfer,
       date: '5 tháng 3, 2025',
       title: 'Triển khai công nghệ thanh toán mới',
       description:

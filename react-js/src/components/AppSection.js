@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/AppSection.css';
+import fakcombankapp from '../assets/pics/FAKECOMBANK.png';
 
 function AppSection() {
   return (
@@ -18,7 +19,7 @@ function AppSection() {
           </div>
         </div>
         <div className="app-image">
-          <img src="./pic/FAKECOMBANK.png" alt="Fakecombank App" />
+        <img src={fakcombankapp} alt="Fakecombank App" />
         </div>
       </div>
     </section>

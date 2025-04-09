@@ -1,69 +1,93 @@
-/* Header.css */
-.header {
-  background: linear-gradient(to right, #007bff, #0056b3);
+/* Header.css (hoặc AppHeader.css) */
+
+.app-header {
+  background: linear-gradient(90deg, #142c8e, #0070ba); /* Gradient xanh nước biển */
   color: white;
-  padding: 15px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 70px;
   position: relative;
 }
 
-.logo {
+.app-header-logo {
   display: flex;
   align-items: center;
-  cursor: pointer;
+  cursor: pointer; /* Thêm cursor để biểu thị có thể click */
 }
 
-.logo img {
-  width: 30px;
-  height: 30px;
+.app-header-logo-img {
+  /* Kích thước được set inline trong component */
   margin-right: 10px;
 }
 
-.desktop-nav {
+.app-header-logo-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.app-header-desktop-nav {
   display: flex;
   align-items: center;
 }
 
-.desktop-nav span, .footer-links span {
-  margin: 0 10px;
+.app-header-nav-item {
+  color: white;
+  margin: 0 15px;
   cursor: pointer;
+  text-decoration: none;
+  padding: 8px 0;
 }
 
-/* Mobile nav styling */
-.mobile-nav1 {
+.app-header-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.app-header-dropdown-menu {
   display: none;
-  width: 100%;
-  background: #0056b3;
-  padding: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
   position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
   top: 100%;
   left: 0;
-  z-index: 100;
 }
 
-.mobile-nav1.active {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-height: 500px;
-  padding: 15px 0;
+.app-header-dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.login-btn1 {
-  background: white;
-  color: #007bff;
+.app-header-dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.app-header-dropdown:hover .app-header-dropdown-menu {
+  display: block;
+}
+
+.app-header-login-btn {
+  background-color: #007bff; /* Màu nền xanh dương */
+  color: white;
   border: none;
-  padding: 5px 15px;
+  padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
+  margin-left: 15px;
+  transition: background-color 0.3s ease;
 }
 
-.menu-toggle1 {
+.app-header-login-btn:hover {
+  background-color: #0056b3; /* Màu nền đậm hơn khi hover */
+}
+
+.app-header-menu-toggle {
   display: none;
   background: none;
   border: none;
@@ -72,72 +96,69 @@
   cursor: pointer;
 }
 
-/* Dropdown styling */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.dropdown-menu {
+.app-header-mobile-nav {
   display: none;
   position: absolute;
-  background: white;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  min-width: 150px;
-  top: 100%;
+  top: 70px;
   left: 0;
+  width: 100%;
+  background-color: #142c8e;
+  flex-direction: column;
+  padding: 20px;
   z-index: 10;
 }
 
-.dropdown-menu a {
+.app-header-mobile-nav .app-header-nav-item {
+  margin: 10px 0;
   display: block;
-  padding: 10px;
   text-decoration: none;
-  color: black;
-  transition: background 0.2s;
+  color: white;
 }
 
-.dropdown-menu a:hover {
-  background: #f1f1f1;
+.app-header-mobile-nav .app-header-dropdown {
+  width: 100%;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
+.app-header-mobile-nav .app-header-dropdown-menu {
+  position: relative;
+  width: 100%;
+  box-shadow: none;
 }
 
-/* Responsive styles */
+.app-header-mobile-nav .app-header-dropdown-menu a {
+  color: white;
+  padding-left: 20px;
+}
+
+.app-header-mobile-nav .app-header-login-btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #007bff; /* Màu nền xanh dương */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.app-header-mobile-nav .app-header-login-btn:hover {
+  background-color: #0056b3; /* Màu nền đậm hơn khi hover */
+}
+
+/* Media query for mobile view */
 @media (max-width: 768px) {
-  .header {
-    padding: 15px;
-  }
-  
-  .desktop-nav2 {
+  .app-header-desktop-nav {
     display: none;
   }
-  
-  .menu-toggle1 {
+
+  .app-header-menu-toggle {
     display: block;
   }
-  
-  .mobile-nav1 .dropdown {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  .mobile-nav1 .dropdown-menu {
-    position: relative;
-    width: 100%;
-    box-shadow: none;
-    margin-top: 5px;
-  }
-  
-  .mobile-nav1 .login-btn {
-    margin-top: 10px;
-    width: 100%;
-    max-width: 200px;
+
+  .app-header-mobile-nav.active {
+    display: flex;
   }
 }

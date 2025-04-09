@@ -5,7 +5,7 @@ import FeatureItem from './FeatureItem';
 function Features() {
   const features = [
     {
-      icon: '',
+      icon: '🔒',
       title: 'An toàn & Bảo mật',
       description:
         'Bảo mật đa lớp với xác thực sinh trắc học và mã hóa tiên tiến cho mọi giao dịch.',
@@ -17,13 +17,13 @@ function Features() {
         'Chuyển tiền, thanh toán được xử lý ngay lập tức, 24/7 không giới hạn thời gian.',
     },
     {
-      icon: '',
+      icon: '💼',
       title: 'Quản lý tài chính',
       description:
         'Công cụ theo dõi chi tiêu thông minh giúp bạn kiểm soát và tối ưu tài chính cá nhân.',
     },
     {
-      icon: '',
+      icon: '🎁',
       title: 'Ưu đãi hấp dẫn',
       description:
         'Nhận ưu đãi độc quyền và khuyến mãi đặc biệt từ các đối tác của chúng tôi.',

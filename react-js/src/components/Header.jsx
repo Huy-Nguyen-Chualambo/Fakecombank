@@ -22,16 +22,23 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
-      <div className="logo" onClick={handleLogoClick}>
-         <img src={fakecombankLogo} alt="Fakecombank logo" />
-        <span>Fakecombank</span>
+    <header className="app-header">
+      <div className="app-header-logo" onClick={handleLogoClick}>
+        <img
+          src={fakecombankLogo}
+          alt="Fakecombank logo"
+          className="app-header-logo-img"
+          style={{ width: '40px', height: '40px' }}
+        />
+        <span className="app-header-logo-text">Fakecombank</span>
       </div>
-      <button className="menu-toggle1" onClick={toggleMobileNav}>☰</button>
-      <nav className="desktop-nav2">
-        <div className="dropdown">
-          <span className="nav-item2">Về chúng tôi ▼</span>
-          <div className="dropdown-menu">
+      <button className="app-header-menu-toggle" onClick={toggleMobileNav}>
+        ☰
+      </button>
+      <nav className="app-header-desktop-nav">
+        <div className="app-header-dropdown">
+          <span className="app-header-nav-item">Về chúng tôi ▼</span>
+          <div className="app-header-dropdown-menu">
             <Link to="#">Ngân hàng số</Link>
             <Link to="#">Dịch vụ thẻ</Link>
             <Link to="#">Tiền gửi</Link>
@@ -42,22 +49,22 @@ const Header = () => {
             <Link to="#">Hỗ trợ</Link>
           </div>
         </div>
-        <div className="dropdown">
-          <span className="nav-item2">Khách hàng ▼</span>
-          <div className="dropdown-menu">
+        <div className="app-header-dropdown">
+          <span className="app-header-nav-item">Khách hàng ▼</span>
+          <div className="app-header-dropdown-menu">
             <Link to="#">Cá nhân</Link>
             <Link to="#">Doanh nghiệp</Link>
             <Link to="#">Nhà đầu tư</Link>
           </div>
         </div>
-        <button className="login-btn" onClick={handleLoginClick}>Đăng nhập</button>
+        <button className="app-header-login-btn" onClick={handleLoginClick}>Đăng nhập</button>
       </nav>
-      
+
       {/* Mobile navigation menu */}
-      <div className={`mobile-nav ${isMobileNavActive ? 'active' : ''}`}>
-        <div className="dropdown">
-          <span className="nav-item2">Về chúng tôi ▼</span>
-          <div className="dropdown-menu">
+      <div className={`app-header-mobile-nav ${isMobileNavActive ? 'active' : ''}`}>
+        <div className="app-header-dropdown">
+          <span className="app-header-nav-item">Về chúng tôi ▼</span>
+          <div className="app-header-dropdown-menu">
             <Link to="#">Ngân hàng số</Link>
             <Link to="#">Dịch vụ thẻ</Link>
             <Link to="#">Tiền gửi</Link>
@@ -68,15 +75,15 @@ const Header = () => {
             <Link to="#">Hỗ trợ</Link>
           </div>
         </div>
-        <div className="dropdown">
-          <span className="nav-item2">Khách hàng ▼</span>
-          <div className="dropdown-menu">
+        <div className="app-header-dropdown">
+          <span className="app-header-nav-item">Khách hàng ▼</span>
+          <div className="app-header-dropdown-menu">
             <Link to="#">Cá nhân</Link>
             <Link to="#">Doanh nghiệp</Link>
             <Link to="#">Nhà đầu tư</Link>
           </div>
         </div>
-        <button className="login-btn1" onClick={handleLoginClick}>Đăng nhập</button>
+        <button className="app-header-login-btn" onClick={handleLoginClick}>Đăng nhập</button>
       </div>
     </header>
   );

@@ -1,25 +1,29 @@
 import React from 'react';
 import '../styles/Products.css';
 import ProductCard from './ProductCard';
+import platinumCardImage from '../assets/pics/platinum-card.jpg';
+import personalLoanImage from '../assets/pics/1569653930-Credit_Card.png';
+import savingsAccountImage from '../assets/pics/personal-loan.jpg';
 
 function Products() {
   const products = [
     {
-      image: './pic/th.jpg',
+      image: 
+      platinumCardImage,
       title: 'Tài khoản số',
       description:
         'Mở tài khoản trực tuyến chỉ trong 5 phút, không cần giấy tờ phức tạp, miễn phí giao dịch nội bộ.',
       link: '#',
     },
     {
-      image: './pic/1569653930-Credit_Card.png',
+      image: personalLoanImage,
       title: 'Thẻ tín dụng',
       description:
         'Thẻ tín dụng với nhiều ưu đãi hấp dẫn, tích lũy điểm thưởng và hoàn tiền lên đến 10% mọi giao dịch.',
       link: '#',
     },
     {
-      image: './pic/personal-loan.jpg',
+      image: savingsAccountImage,
       title: 'Vay cá nhân',
       description:
         'Giải pháp tài chính linh hoạt với lãi suất cạnh tranh, thủ tục đơn giản và phê duyệt nhanh chóng.',
